@@ -1,0 +1,53 @@
+{
+  "categories": [
+    {
+      "id": "2",
+      "title": "Хобби"
+    },
+    {
+      "id": "oQkY14c_-rFKqa4aRgllX",
+      "title": "title123"
+    },
+    {
+      "id": "5nZY0PNVvVxuTHmUmms5w",
+      "title": "ewgewhewbew"
+    }
+  ],
+  "todos": [
+    {
+      "id": "wPglSUlBk3SF3gewrgewghIhwN_",
+      "text": "читать мангу",
+      "categoryId": "2"
+    },
+    {
+      "id": "sz3s3C71enBCqaPMdSdTN",
+      "text": "wegewgerw",
+      "categoryId": "oQkY14c_-rFKqa4aRgllX"
+    },
+    {
+      "id": "zC5H4Q6sJ9W2_R55OGIp2",
+      "text": "ewgewwe",
+      "categoryId": "oQkY14c_-rFKqa4aRgllX"
+    },
+    {
+      "id": "99JnQiIAsRrcMyUCmbQPU",
+      "text": "hello tyjrtjrtutsbresbkuytty",
+      "categoryId": "oQkY14c_-rFKqa4aRgllX"
+    },
+    {
+      "id": "heO8NsQd_xvzRDDMQYCf2",
+      "text": "ewrgewrgew",
+      "categoryId": "5nZY0PNVvVxuTHmUmms5w"
+    },
+    {
+      "id": "YB6oQpWAEKX2eLmB3bGUx",
+      "text": "ewgerwgg",
+      "categoryId": "5nZY0PNVvVxuTHmUmms5w"
+    },
+    {
+      "id": "Zcdy9xzcsV3ABUtWSOonx",
+      "text": "ewgewrg",
+      "categoryId": "5nZY0PNVvVxuTHmUmms5w"
+    }
+  ]
+}
