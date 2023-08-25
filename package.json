@@ -20,9 +20,9 @@
   "license": "ISC",
   "lint-staged": {
     "*.{ts,tsx}": [
-      "npm run format",
-      "npm run lint:scss:fix",
-      "npm run lint:scss:fix"
+      "pnpm format",
+      "pnpm lint:scss:fix",
+      "pnpm lint:scss:fix"
     ]
   },
   "devDependencies": {
