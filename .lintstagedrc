@@ -1,0 +1,3 @@
+{
+  "*.{ts,tsx}": ["pnpm format", "pnpm lint:scss:fix", "pnpm lint:scss:fix"]
+}
