@@ -18,6 +18,13 @@
   },
   "author": "",
   "license": "ISC",
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run format",
+      "npm run lint:scss:fix",
+      "npm run lint:scss:fix"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.22.11",
     "@babel/plugin-transform-runtime": "^7.22.10",
@@ -52,7 +59,7 @@
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
     "html-webpack-plugin": "^5.5.3",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.6.4",
     "jest-environment-jsdom": "^29.6.4",
