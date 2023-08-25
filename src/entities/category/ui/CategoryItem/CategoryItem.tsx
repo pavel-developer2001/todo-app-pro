@@ -62,7 +62,9 @@ export const CategoryItem = ({ category }: { category: ICategory }) => {
           </>
         ) : (
           <>
-            <p>{category.title}</p>
+            <p className="bg-sky-800 rounded-lg text-cyan-100">
+              {category.title}
+            </p>
             <div>
               <button
                 onClick={() => {
