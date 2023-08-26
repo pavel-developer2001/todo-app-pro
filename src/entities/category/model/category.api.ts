@@ -1,9 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import { ICategory } from "./category.types"
+import { SERVER_API } from "@/shared/const/api"
 
 export const categoryApi = createApi({
   reducerPath: "categoryApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3001" }),
+  baseQuery: fetchBaseQuery({ baseUrl: SERVER_API }),
   tagTypes: ["Category"],
   endpoints: (builder) => ({
     getCategories: builder.query<ICategory[], any>({

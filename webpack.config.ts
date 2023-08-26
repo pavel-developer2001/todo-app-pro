@@ -4,6 +4,18 @@ import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin"
 import ESLintPlugin from "eslint-webpack-plugin"
 import { CleanWebpackPlugin } from "clean-webpack-plugin"
 import MiniCssExtractPlugin from "mini-css-extract-plugin"
+import webpack from "webpack"
+import dotenv from "dotenv"
+
+const env = dotenv.config().parsed
+
+//@ts-ignore
+const envKeys = Object.keys(env).reduce((prev, next) => {
+  //@ts-ignore
+  // eslint-disable-next-line no-param-reassign
+  prev[`process.env.${next}`] = JSON.stringify(env[next])
+  return prev
+}, {})
 
 module.exports = {
   mode: "development",
@@ -62,6 +74,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.DefinePlugin(envKeys),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),

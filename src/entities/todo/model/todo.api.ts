@@ -1,8 +1,9 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
+import { SERVER_API } from "@/shared/const/api"
 
 export const todoApi = createApi({
   reducerPath: "todoApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3001" }),
+  baseQuery: fetchBaseQuery({ baseUrl: SERVER_API }),
   tagTypes: ["Todo"],
   endpoints: (builder) => ({
     getTodosByCategory: builder.query({
