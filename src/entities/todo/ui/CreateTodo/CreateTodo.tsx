@@ -1,6 +1,7 @@
 import { nanoid } from "@reduxjs/toolkit"
 import React, { useState } from "react"
 import { useCreateTodoMutation } from "../../model/todo.api"
+import { CreateNewItem } from "@/widgets/CreateNewItem/CreateNewItem"
 
 export const CreateTodo = ({ categoryId }: { categoryId: string }) => {
   const [todoName, setTodoName] = useState("")
@@ -16,16 +17,12 @@ export const CreateTodo = ({ categoryId }: { categoryId: string }) => {
     setTodoName("")
   }
   return (
-    <form onSubmit={onCreate}>
-      {isError && <div>Произошла ошибка!</div>}
-      <input
-        placeholder="Enter New Todo"
-        value={todoName}
-        onChange={(e) => setTodoName(e.target.value)}
-      />
-      <button disabled={todoName.length <= 4} type="submit">
-        {isLoading ? "Loading" : "Create"}
-      </button>
-    </form>
+    <CreateNewItem
+      onCreate={onCreate}
+      isError={isError}
+      isLoading={isLoading}
+      setValue={setTodoName}
+      value={todoName}
+    />
   )
 }

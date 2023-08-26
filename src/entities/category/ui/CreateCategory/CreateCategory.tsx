@@ -1,6 +1,7 @@
 import { nanoid } from "@reduxjs/toolkit"
 import React, { useState } from "react"
 import { useCreateCategoryMutation } from "../../model/category.api"
+import { CreateNewItem } from "@/widgets/CreateNewItem/CreateNewItem"
 
 export const CreateCategory = () => {
   const [categoryName, setCategoryName] = useState("")
@@ -15,16 +16,12 @@ export const CreateCategory = () => {
     setCategoryName("")
   }
   return (
-    <form onSubmit={onCreate}>
-      {isError && <div>Произошла ошибка!</div>}
-      <input
-        placeholder="enter name new category"
-        value={categoryName}
-        onChange={(e) => setCategoryName(e.target.value)}
-      />
-      <button disabled={categoryName.length <= 4} type="submit">
-        {isLoading ? "Loading" : "Create"}
-      </button>
-    </form>
+    <CreateNewItem
+      onCreate={onCreate}
+      isError={isError}
+      setValue={setCategoryName}
+      value={categoryName}
+      isLoading={isLoading}
+    />
   )
 }
