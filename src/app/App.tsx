@@ -12,6 +12,7 @@ export const App = () => {
     return <div>loading...</div>
   }
   if (error) {
+    //@ts-ignore
     return <div>{error.error}</div>
   }
   return (

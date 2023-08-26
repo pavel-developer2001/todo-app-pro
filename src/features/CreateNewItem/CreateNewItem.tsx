@@ -11,6 +11,7 @@ interface CreateNewItemProps {
   // eslint-disable-next-line no-unused-vars
   setValue: (arg: string) => void
   isLoading: boolean
+  dataTestId?:string
 }
 
 export const CreateNewItem = ({
@@ -19,11 +20,13 @@ export const CreateNewItem = ({
   value,
   setValue,
   isLoading,
+  dataTestId
 }: CreateNewItemProps) => {
   return (
     <Form onSubmit={onCreate}>
       {isError && <div>Произошла ошибка!</div>}
       <TextField
+      data-testid={dataTestId}
         placeholder="enter name new category"
         value={value}
         onChange={(e) => setValue(e.target.value)}

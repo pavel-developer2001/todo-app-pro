@@ -17,6 +17,7 @@ export const CreateCategory = () => {
   }
   return (
     <CreateNewItem
+      dataTestId="category-input"
       onCreate={onCreate}
       isError={isError}
       setValue={setCategoryName}
