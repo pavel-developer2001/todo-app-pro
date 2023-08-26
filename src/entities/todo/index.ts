@@ -1,11 +1,15 @@
-export { CreateTodo } from "./ui/CreateTodo/CreateTodo"
+export {
+  useCreateTodoMutation,
+  useGetTodosByCategoryQuery,
+  useDeleteTodosByCategoryMutation,
+  useDeleteTodoMutation,
+  useUpdateTodoTextMutation,
+} from "./model/todo.api"
 
-export { useDeleteTodosByCategoryMutation } from "./model/todo.api"
+export { CreateTodo } from "../../widgets/CreateTodo/CreateTodo"
 
-export { useGetTodosByCategoryQuery } from "./model/todo.api"
+export { TodoList } from "../../widgets/TodoList/TodoList"
 
-export { TodoList } from "./ui/TodoList/TodoList"
-
-export { TodoItem } from "./ui/TodoItem/TodoItem"
+export { TodoItem } from "../../widgets/TodoItem/TodoItem"
 
 export type { ITodo } from "./model/todo.types.ts"

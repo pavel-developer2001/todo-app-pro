@@ -1,5 +1,11 @@
-export { CreateCategory } from "./ui/CreateCategory/CreateCategory"
+export type { ICategory } from "./model/category.types"
+export { CreateCategory } from "../../widgets/CreateCategory/CreateCategory"
 
-export { useGetCategoriesQuery } from "./model/category.api"
+export {
+  useGetCategoriesQuery,
+  useDeleteCategoryMutation,
+  useUpdateCategoryTitleMutation,
+  useCreateCategoryMutation,
+} from "./model/category.api"
 
-export { CategoryItem } from "./ui/CategoryItem/CategoryItem"
+export { CategoryItem } from "../../widgets/CategoryItem/CategoryItem"

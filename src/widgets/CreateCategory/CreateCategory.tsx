@@ -1,7 +1,7 @@
 import { nanoid } from "@reduxjs/toolkit"
 import React, { useState } from "react"
-import { useCreateCategoryMutation } from "../../model/category.api"
-import { CreateNewItem } from "@/widgets/CreateNewItem/CreateNewItem"
+import { useCreateCategoryMutation } from "../../entities/category"
+import { CreateNewItem } from "@/features/CreateNewItem/CreateNewItem"
 
 export const CreateCategory = () => {
   const [categoryName, setCategoryName] = useState("")

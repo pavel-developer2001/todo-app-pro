@@ -1,7 +1,7 @@
 import { nanoid } from "@reduxjs/toolkit"
 import React, { useState } from "react"
-import { useCreateTodoMutation } from "../../model/todo.api"
-import { CreateNewItem } from "@/widgets/CreateNewItem/CreateNewItem"
+import { useCreateTodoMutation } from "../../entities/todo"
+import { CreateNewItem } from "@/features/CreateNewItem/CreateNewItem"
 
 export const CreateTodo = ({ categoryId }: { categoryId: string }) => {
   const [todoName, setTodoName] = useState("")
