@@ -1,16 +1,8 @@
 {
   "categories": [
     {
-      "id": "2",
-      "title": "Хобби"
-    },
-    {
       "id": "oQkY14c_-rFKqa4aRgllX",
       "title": "title123222"
-    },
-    {
-      "id": "5nZY0PNVvVxuTHmUmms5w",
-      "title": "ewgewhewbew"
     },
     {
       "id": "eXKaQqs7n7SJ4QCfqRWsY",
@@ -19,14 +11,17 @@
     {
       "id": "QVV4UJ88caMrYpmybc5sc",
       "title": "hgewhtrre"
+    },
+    {
+      "id": "62VMw7XkJV3IMfwUZTyzZ",
+      "title": "55j5j54j54j54j5454j4"
+    },
+    {
+      "id": "RGClQycrUIlPpS4uQN8d-",
+      "title": "trjyrytjrtjrtjtrjt"
     }
   ],
   "todos": [
-    {
-      "id": "wPglSUlBk3SF3gewrgewghIhwN_",
-      "text": "читать мангу",
-      "categoryId": "2"
-    },
     {
       "id": "zC5H4Q6sJ9W2_R55OGIp2",
       "text": "test123",
@@ -38,34 +33,34 @@
       "categoryId": "oQkY14c_-rFKqa4aRgllX"
     },
     {
-      "id": "heO8NsQd_xvzRDDMQYCf2",
-      "text": "ewrgewrgew",
-      "categoryId": "5nZY0PNVvVxuTHmUmms5w"
-    },
-    {
-      "id": "YB6oQpWAEKX2eLmB3bGUx",
-      "text": "ewgerwgg",
-      "categoryId": "5nZY0PNVvVxuTHmUmms5w"
-    },
-    {
-      "id": "Zcdy9xzcsV3ABUtWSOonx",
-      "text": "ewgewrg",
-      "categoryId": "5nZY0PNVvVxuTHmUmms5w"
-    },
-    {
       "id": "A1UB5JnxXu3cMBjuVIpqF",
       "text": "test1234",
-      "categoryId": "oQkY14c_-rFKqa4aRgllX"
-    },
-    {
-      "id": "MZ3EmTMp1gHjy-W1sbFq1",
-      "text": "test",
       "categoryId": "oQkY14c_-rFKqa4aRgllX"
     },
     {
       "id": "v_q8Kk0m4KVfpSR1vLWsS",
       "text": "rwegrw",
       "categoryId": "oQkY14c_-rFKqa4aRgllX"
+    },
+    {
+      "id": "bCqDuy3h8FoMsyMNIwoLI",
+      "text": "tjytrtjy",
+      "categoryId": "62VMw7XkJV3IMfwUZTyzZ"
+    },
+    {
+      "id": "p9eMY5FuP9l9pR7n7xwCX",
+      "text": "tyjttrjt",
+      "categoryId": "62VMw7XkJV3IMfwUZTyzZ"
+    },
+    {
+      "id": "yhpfboXJzwbo3ripUw8yb",
+      "text": "5j54j54",
+      "categoryId": "62VMw7XkJV3IMfwUZTyzZ"
+    },
+    {
+      "id": "AJDgMgi1iJ-6QFmbkbszL",
+      "text": "5j54j",
+      "categoryId": "eXKaQqs7n7SJ4QCfqRWsY"
     }
   ]
 }

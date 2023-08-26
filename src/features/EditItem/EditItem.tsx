@@ -1,7 +1,7 @@
 import React, { useState } from "react"
+import { MdModeEdit, MdDelete, MdCancel, MdCheck } from "react-icons/md"
 import { Button } from "@/shared/ui/Button/Button"
 import { Form } from "@/shared/ui/Form/Form"
-import { TextField } from "@/shared/ui/TextField/TextField"
 import { Typography } from "@/shared/ui/Typography/Typography"
 import { Flex } from "@/shared/ui/Flex/Flex"
 
@@ -35,33 +35,44 @@ export const EditItem = ({
   }
 
   return (
-    <Flex>
+    <>
       {isEdit ? (
         <>
           {isError && <div>Error</div>}
-          <Form onSubmit={onChangeItem}>
-            <TextField
+          <Form onSubmit={onChangeItem} className="flex justify-between">
+            <input
               value={value}
+              className="px-0 py-0 rounded-none border-none min-w-[83%] focus:outline-none "
               onChange={(e) => setValue(e.target.value)}
             />
-            <Button type="submit">{isLoading ? "..." : "Обновить"}</Button>
-            <Button onClick={() => setIsEdit(false)}>Отмена</Button>
+            <Flex>
+              <Button type="submit">
+                {isLoading ? "..." : <MdCheck className="text-2xl" />}
+              </Button>
+              <Button onClick={() => setIsEdit(false)}>
+                <MdCancel className="text-2xl" />
+              </Button>
+            </Flex>
           </Form>
         </>
       ) : (
-        <>
-          <Typography text={value} />
-          <Button
-            onClick={() => {
-              setIsEdit(true)
-              setValue(value)
-            }}
-          >
-            Редактировать
-          </Button>
-          <Button onClick={onDeleteItem}>Удалить</Button>
-        </>
+        <Flex className="justify-between">
+          <Typography text={value} stylesForText="rounded-lg" />
+          <Flex>
+            <Button
+              onClick={() => {
+                setIsEdit(true)
+                setValue(value)
+              }}
+            >
+              <MdModeEdit className="text-2xl" />
+            </Button>
+            <Button onClick={onDeleteItem}>
+              <MdDelete className="text-2xl" />
+            </Button>
+          </Flex>
+        </Flex>
       )}
-    </Flex>
+    </>
   )
 }

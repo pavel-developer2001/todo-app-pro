@@ -17,7 +17,10 @@ export const CreateCategory = () => {
   }
   return (
     <CreateNewItem
-      dataTestId="category-input"
+      title="Создать новую категорию"
+      stylesForForm="flex justify-center my-7"
+      dataTestIdInput="category-input"
+      dataTestIdButton="category-btn"
       onCreate={onCreate}
       isError={isError}
       setValue={setCategoryName}

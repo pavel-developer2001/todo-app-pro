@@ -18,6 +18,8 @@ export const CreateTodo = ({ categoryId }: { categoryId: string }) => {
   }
   return (
     <CreateNewItem
+      title="Добавить новую задачу"
+      stylesForForm="my-4"
       onCreate={onCreate}
       isError={isError}
       isLoading={isLoading}

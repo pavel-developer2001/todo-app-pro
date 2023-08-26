@@ -1,28 +1,12 @@
 import React from "react"
-import {
-  CategoryItem,
-  CreateCategory,
-  useGetCategoriesQuery,
-} from "@/entities/category"
+import { CreateCategory } from "@/entities/category"
+import { CategoryList } from "@/widgets/CategoryList/CategoryList"
 
 export const App = () => {
-  const { data, isLoading, error } = useGetCategoriesQuery("")
-
-  if (isLoading) {
-    return <div>loading...</div>
-  }
-  if (error) {
-    //@ts-ignore
-    return <div>{error.error}</div>
-  }
   return (
-    <>
+    <main>
       <CreateCategory />
-      <main style={{ display: "flex", justifyContent: "space-around" }}>
-        {data!.map((category) => (
-          <CategoryItem key={category.id} category={category} />
-        ))}
-      </main>
-    </>
+      <CategoryList />
+    </main>
   )
 }

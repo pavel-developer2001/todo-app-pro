@@ -44,7 +44,7 @@ export const CategoryItem = ({ category }: { category: ICategory }) => {
   }
 
   return (
-    <Block>
+    <Block className="border border-indigo-600 rounded-md mx-4 px-4 py-4 my-3 min-w-[300px]">
       <EditItem
         value={categoryName}
         onDeleteItem={onDeleteCategory}
