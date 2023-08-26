@@ -12,6 +12,7 @@ import {
   useDeleteCategoryMutation,
   useUpdateCategoryTitleMutation,
 } from "@/entities/category"
+import { Block } from "@/shared/ui/Block/Block"
 
 export const CategoryItem = ({ category }: { category: ICategory }) => {
   const [deleteTodosByCategory] = useDeleteTodosByCategoryMutation()
@@ -42,7 +43,7 @@ export const CategoryItem = ({ category }: { category: ICategory }) => {
   }
 
   return (
-    <main>
+    <Block>
       <EditItem
         value={categoryName}
         onDeleteItem={onDeleteCategory}
@@ -54,6 +55,6 @@ export const CategoryItem = ({ category }: { category: ICategory }) => {
       />
       <CreateTodo categoryId={category.id} />
       <TodoList todos={todos} />
-    </main>
+    </Block>
   )
 }

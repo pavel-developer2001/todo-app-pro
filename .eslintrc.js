@@ -7,7 +7,7 @@ module.exports = {
     "plugin:react/recommended",
     "airbnb",
     "prettier",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -38,7 +38,7 @@ module.exports = {
     "jsx-a11y/anchor-has-content": "off",
     "react/button-has-type": "off",
     "no-shadow": "off",
-    "arrow-body-style": "warn",
+    "arrow-body-style": "off",
     "no-undef": "off",
     "no-unused-vars": "warn",
     "spaced-comment": "off",

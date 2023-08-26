@@ -1,8 +1,11 @@
-/* eslint-disable arrow-body-style */
 import React from "react"
+import { Button } from "@/shared/ui/Button/Button"
+import { TextField } from "@/shared/ui/TextField/TextField"
+import { Form } from "@/shared/ui/Form/Form"
 
 interface CreateNewItemProps {
   isError: boolean
+  // eslint-disable-next-line no-unused-vars
   onCreate: (e: React.FormEvent<HTMLFormElement>) => void
   value: string
   // eslint-disable-next-line no-unused-vars
@@ -18,16 +21,16 @@ export const CreateNewItem = ({
   isLoading,
 }: CreateNewItemProps) => {
   return (
-    <form onSubmit={onCreate}>
+    <Form onSubmit={onCreate}>
       {isError && <div>Произошла ошибка!</div>}
-      <input
+      <TextField
         placeholder="enter name new category"
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-      <button disabled={value.length <= 4} type="submit">
+      <Button disabled={value.length <= 4} type="submit">
         {isLoading ? "Loading" : "Create"}
-      </button>
-    </form>
+      </Button>
+    </Form>
   )
 }

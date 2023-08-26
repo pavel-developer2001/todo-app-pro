@@ -1,4 +1,9 @@
 import React, { useState } from "react"
+import { Button } from "@/shared/ui/Button/Button"
+import { Form } from "@/shared/ui/Form/Form"
+import { TextField } from "@/shared/ui/TextField/TextField"
+import { Typography } from "@/shared/ui/Typography/Typography"
+import { Flex } from "@/shared/ui/Flex/Flex"
 
 interface EditItemProps {
   item: unknown
@@ -30,32 +35,33 @@ export const EditItem = ({
   }
 
   return (
-    <div style={{ display: "flex" }}>
+    <Flex>
       {isEdit ? (
         <>
           {isError && <div>Error</div>}
-          <form onSubmit={onChangeItem}>
-            <input value={value} onChange={(e) => setValue(e.target.value)} />
-            <button type="submit">{isLoading ? "..." : "Обновить"}</button>
-            <button onClick={() => setIsEdit(false)}>Отмена</button>
-          </form>
+          <Form onSubmit={onChangeItem}>
+            <TextField
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+            />
+            <Button type="submit">{isLoading ? "..." : "Обновить"}</Button>
+            <Button onClick={() => setIsEdit(false)}>Отмена</Button>
+          </Form>
         </>
       ) : (
         <>
-          <p>{value}</p>
-          <div>
-            <button
-              onClick={() => {
-                setIsEdit(true)
-                setValue(value)
-              }}
-            >
-              Редактировать
-            </button>
-            <button onClick={onDeleteItem}>Удалить</button>
-          </div>
+          <Typography text={value} />
+          <Button
+            onClick={() => {
+              setIsEdit(true)
+              setValue(value)
+            }}
+          >
+            Редактировать
+          </Button>
+          <Button onClick={onDeleteItem}>Удалить</Button>
         </>
       )}
-    </div>
+    </Flex>
   )
 }
