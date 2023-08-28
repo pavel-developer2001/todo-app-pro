@@ -1,19 +1,19 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import { TodoItem } from "./TodoItem"
 import StoreProvider from "@/shared/config/StoreProvider/StoreProvider"
+import { CategoryList } from "./CategoryList"
+
 
 const meta = {
-  title: "widgets/TodoItem",
-  component: TodoItem,
+  title: "widgets/CategoryList",
+  component: CategoryList,
   decorators: [StoreProvider],
-} satisfies Meta<typeof TodoItem>
+} satisfies Meta<typeof CategoryList>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    todo: { id: "1", text: "hello", categoryId: "1" },
+    categoryId: "1",
   },
 }
-

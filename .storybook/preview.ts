@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react"
+import TailwindCssProvider from '../src/shared/config/TailwindCssProvider/TailwindCssProvider'
 
 const preview: Preview = {
   parameters: {
@@ -10,6 +11,9 @@ const preview: Preview = {
       },
     },
   },
+  decorators:[
+    TailwindCssProvider
+  ]
 }
 
 export default preview

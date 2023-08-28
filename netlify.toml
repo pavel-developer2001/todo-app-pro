@@ -3,6 +3,3 @@
   publish = "/dist"
   base ="/"
 
-
-[context.production.environment]
-  SERVER_API = "https://todo-app-server-ahlqsiolp-pavel-developer2001.vercel.app"
