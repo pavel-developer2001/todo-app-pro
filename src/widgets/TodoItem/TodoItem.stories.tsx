@@ -14,5 +14,5 @@ export const Primary: Story = {
   args: {
     todo: { id: "1", text: "hello", categoryId: "1" },
   },
-// }
+}
 // Primary.decorators = [StoreProvider({})]
