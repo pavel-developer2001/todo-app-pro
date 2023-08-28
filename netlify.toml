@@ -2,8 +2,3 @@
   command = "CI='' npm run build"
   publish = "/dist"
   base ="/"
-
-[[redirects]]
-  from = "/*"
-  to = "/*"
-  status = 200
