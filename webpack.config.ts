@@ -67,7 +67,9 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      "process.env.SERVER_API": JSON.stringify(env!.SERVER_API),
+      "process.env.SERVER_API": JSON.stringify(
+        env!.SERVER_API ?? "http://localhost:3001"
+      ),
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
