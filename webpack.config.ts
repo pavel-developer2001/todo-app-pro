@@ -7,13 +7,7 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin"
 import webpack from "webpack"
 import dotenv from "dotenv"
 
-const env: any = dotenv.config().parsed
-
-const envKeys = Object.keys(env).reduce((prev, next) => {
-  // eslint-disable-next-line no-param-reassign
-  prev[`process.env.${next}`] = JSON.stringify(env[next])
-  return prev
-}, {})
+const env = dotenv.config().parsed
 
 module.exports = {
   mode: process.env.NODE_ENV,
@@ -72,7 +66,9 @@ module.exports = {
     ],
   },
   plugins: [
-    new webpack.DefinePlugin(envKeys),
+    new webpack.DefinePlugin({
+      "process.env.SERVER_API": JSON.stringify(env!.SERVER_API),
+    }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
