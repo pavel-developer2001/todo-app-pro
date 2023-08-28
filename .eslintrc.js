@@ -43,6 +43,7 @@ module.exports = {
     "no-unused-vars": "warn",
     "spaced-comment": "off",
     "react/jsx-no-useless-fragment": "off",
+    "prefer-destructuring": "off",
     "react/function-component-definition": [
       2,
       {
