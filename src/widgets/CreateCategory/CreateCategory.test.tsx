@@ -4,7 +4,6 @@
 
 // jest.mock("react-redux")
 
-
 // // const mockedHook = jest.spyOn(reduxHooks, "useCreateCategoryMutation")
 
 // describe("CreateCategory tests", () => {
@@ -16,3 +15,6 @@
 //     screen.debug()
 //   })
 // })
+test("mock test", () => {
+  expect(2 + 2).toBe(4)
+})
