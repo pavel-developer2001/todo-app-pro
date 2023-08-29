@@ -10,8 +10,10 @@ export const todoApi = createApi({
       query: (categoryId) => `/todos?categoryId=${categoryId}`,
       providesTags: (result) =>
         result
-          ? //@ts-ignore
-            [...result.map(({ id }) => ({ type: "Todo", id })), "Todo"]
+          ? [
+              ...result.map(({ id }: { id: string }) => ({ type: "Todo", id })),
+              "Todo",
+            ]
           : ["Todo"],
     }),
     createTodo: builder.mutation({

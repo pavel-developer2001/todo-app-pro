@@ -30,8 +30,7 @@ export const CategoryItem = ({ category }: { category: ICategory }) => {
     return <div>loading...</div>
   }
   if (errorTodo) {
-    //@ts-ignore
-    return <div>{errorTodo}</div>
+    return <div>{errorTodo as string}</div>
   }
   const updateCategoryItem = {
     id: category.id,

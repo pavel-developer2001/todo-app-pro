@@ -1,5 +1,9 @@
 import React from "react"
-import { CategoryItem, useGetCategoriesQuery } from "@/entities/category"
+import {
+  CategoryItem,
+  ICategory,
+  useGetCategoriesQuery,
+} from "@/entities/category"
 import { Flex } from "@/shared/ui/Flex/Flex"
 
 export const CategoryList = () => {
@@ -13,7 +17,7 @@ export const CategoryList = () => {
   }
   return (
     <Flex className="flex-wrap justify-center">
-      {data!.map((category) => (
+      {data!.map((category: ICategory) => (
         <CategoryItem key={category.id} category={category} />
       ))}
     </Flex>

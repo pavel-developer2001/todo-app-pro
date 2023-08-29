@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
-import { ICategory } from "./category.types"
 import { SERVER_API } from "@/shared/const/api"
 
 export const categoryApi = createApi({
@@ -7,12 +6,17 @@ export const categoryApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: SERVER_API }),
   tagTypes: ["Category"],
   endpoints: (builder) => ({
-    getCategories: builder.query<ICategory[], any>({
+    getCategories: builder.query({
       query: () => `/categories`,
-      //@ts-ignore
       providesTags: (result) =>
         result
-          ? [...result.map(({ id }) => ({ type: "Category", id })), "Category"]
+          ? [
+              ...result.map(({ id }: { id: string }) => ({
+                type: "Category",
+                id,
+              })),
+              "Category",
+            ]
           : ["Category"],
     }),
     createCategory: builder.mutation({
