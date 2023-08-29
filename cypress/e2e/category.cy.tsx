@@ -6,7 +6,6 @@ describe("category e2e tests", () => {
   beforeEach(() => {
     cy.request("http://localhost:3001/categories").then((response) => {
       data = response
-      console.info("BeforeEach Response: ", data)
     })
   })
   it("CRUD categories", () => {

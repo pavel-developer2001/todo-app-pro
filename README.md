@@ -69,4 +69,4 @@ Start json-server
   npm run server
 ```
 
-- - Not done
+\* - Not done

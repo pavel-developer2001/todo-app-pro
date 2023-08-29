@@ -25,6 +25,8 @@ export const CreateTodo = ({ categoryId }: { categoryId: string }) => {
       isLoading={isLoading}
       setValue={setTodoName}
       value={todoName}
+      dataTestIdInput="create-todo-input"
+      dataTestIdButton="create-todo-btn"
     />
   )
 }
