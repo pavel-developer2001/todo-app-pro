@@ -41,7 +41,7 @@ export const CreateNewItem = ({
       <Button
         className="ml-2"
         data-testid={dataTestIdButton}
-        disabled={value.length <= 4}
+        disabled={value.length < 4}
         type="submit"
       >
         {isLoading ? "..." : <MdAdd />}

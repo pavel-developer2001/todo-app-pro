@@ -1,82 +1,43 @@
 {
   "categories": [
     {
-      "id": "oQkY14c_-rFKqa4aRgllX",
-      "title": "title123222"
+      "id": "G5CjnWYEgaaFk_sqtJl1i",
+      "title": "Кино"
     },
     {
-      "id": "eXKaQqs7n7SJ4QCfqRWsY",
-      "title": "y55j64"
+      "id": "Xd-E2OGzXn1LW4x--SShb",
+      "title": "Frontend"
     },
     {
-      "id": "QVV4UJ88caMrYpmybc5sc",
-      "title": "hgewhtrre"
-    },
-    {
-      "id": "62VMw7XkJV3IMfwUZTyzZ",
-      "title": "55j5j54j54j54j5454j4"
-    },
-    {
-      "id": "RGClQycrUIlPpS4uQN8d-",
-      "title": "trjyrytjrtjrtjtrjt"
-    },
-    {
-      "id": "CetvWjBkym6rK2kV-oLxa",
-      "title": "test category"
-    },
-    {
-      "id": "100",
-      "title": "test category"
-    },
-    {
-      "id": "eVxZCdzNLBDsv4Lt9a7Q9",
-      "title": "test category"
-    },
-    {
-      "id": "dRaq6Rdivr8Jno5rwb6Wk",
-      "title": "test category"
+      "id": "YfYAAiccgWSzxm0RrU9TB",
+      "title": "Диета"
     }
   ],
   "todos": [
     {
-      "id": "zC5H4Q6sJ9W2_R55OGIp2",
-      "text": "test123",
-      "categoryId": "oQkY14c_-rFKqa4aRgllX"
+      "id": "1oM1VuS7wQ-ThkK08wLO6",
+      "text": "Посмотреть Барбигеймер",
+      "categoryId": "G5CjnWYEgaaFk_sqtJl1i"
     },
     {
-      "id": "99JnQiIAsRrcMyUCmbQPU",
-      "text": "hello tyjrtjrtutsbresbkuytty",
-      "categoryId": "oQkY14c_-rFKqa4aRgllX"
+      "id": "Nln1ncGZIKOnoXzS8UXQl",
+      "text": "Посмотреть Асоку",
+      "categoryId": "G5CjnWYEgaaFk_sqtJl1i"
     },
     {
-      "id": "A1UB5JnxXu3cMBjuVIpqF",
-      "text": "test1234",
-      "categoryId": "oQkY14c_-rFKqa4aRgllX"
+      "id": "LU9VBtjqyQlEXyAqJsK0u",
+      "text": "Изучить Next 13",
+      "categoryId": "Xd-E2OGzXn1LW4x--SShb"
     },
     {
-      "id": "v_q8Kk0m4KVfpSR1vLWsS",
-      "text": "rwegrw",
-      "categoryId": "oQkY14c_-rFKqa4aRgllX"
+      "id": "Cqksn9PXFD7rsh4QG_kls",
+      "text": "Изучить Graphql",
+      "categoryId": "Xd-E2OGzXn1LW4x--SShb"
     },
     {
-      "id": "bCqDuy3h8FoMsyMNIwoLI",
-      "text": "tjytrtjy",
-      "categoryId": "62VMw7XkJV3IMfwUZTyzZ"
-    },
-    {
-      "id": "p9eMY5FuP9l9pR7n7xwCX",
-      "text": "tyjttrjt",
-      "categoryId": "62VMw7XkJV3IMfwUZTyzZ"
-    },
-    {
-      "id": "yhpfboXJzwbo3ripUw8yb",
-      "text": "5j54j54",
-      "categoryId": "62VMw7XkJV3IMfwUZTyzZ"
-    },
-    {
-      "id": "AJDgMgi1iJ-6QFmbkbszL",
-      "text": "5j54j",
-      "categoryId": "eXKaQqs7n7SJ4QCfqRWsY"
+      "id": "hq45uYA4V3mq-7eG-XpDu",
+      "text": "Сбросить 5 кг",
+      "categoryId": "YfYAAiccgWSzxm0RrU9TB"
     }
   ]
 }
